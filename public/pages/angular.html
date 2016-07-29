@@ -58,7 +58,7 @@
 				show the list in 3 second after the page is loaded.
 			</div>
 			<div ng-controller="test1Controller">
-				<ul ng-if="show" ng-repeat="item in items | filter: { inactive: '' }">
+				<ul ng-if="show" ng-repeat="item in items | filter: { inactive: '!true' }">
 				<li>{{item.name}}</li>
 				
 			</div>
